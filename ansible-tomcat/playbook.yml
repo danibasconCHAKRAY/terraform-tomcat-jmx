@@ -1,0 +1,9 @@
+---
+- name: Install tomcat
+  hosts: aws 
+  become: yes
+  roles:
+          - ansible-role-java
+          - ansible-role-tomcat8
+          #          - ansible-tomcat7
+          #          - ansible-role-tomcat6
